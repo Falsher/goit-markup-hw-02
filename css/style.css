@@ -124,7 +124,8 @@ a {
     line-height: 1.2;
     letter-spacing: 0.03em;
     font-weight: 700;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    text-transform: uppercase;
 }
 
 .features-link p {
