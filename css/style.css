@@ -5,10 +5,6 @@
     --first-color: #ffffff
 }
 
-body {
-    background-color: var(--first-color);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -22,20 +18,17 @@ ul {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-a {
-    font-family: Roboto, sans-serif;
+html,
+body {
+    background-color: var(--first-color);
+    font-family: 'Roboto', sans-serif;
 }
 
 
 /*header*/
 
 .logo {
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.2;
     font-weight: 700;
@@ -84,15 +77,6 @@ a {
     background-color: #2F303A;
 }
 
-.button-hero {
-    background: var(--accent-color);
-    width: 200px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-}
-
 .hero-discription h1 {
     font-size: 44px;
     line-height: 1.4;
@@ -103,12 +87,14 @@ a {
     text-transform: uppercase;
 }
 
-.hero-discription button {
+.hero-discription .hero-button {
+    background: var(--accent-color);
     font-size: 16px;
     line-height: 1.9;
     font-weight: 700;
     letter-spacing: 0.06em;
     color: var(--first-color);
+    text-align: center;
 }
 
 
@@ -198,4 +184,41 @@ a {
 .footer-link a:hover,
 .footer-link a:focus {
     color: var(--accent-color);
+}
+
+
+/*страница portfolio*/
+
+
+/*filters*/
+
+.filters button:hover,
+.filters button:focus {
+    background: var(--accent-color);
+    color: var(--first-color);
+}
+
+.filters button {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F4FA;
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/*projects*/
+
+.projects h3 {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--primary-text-color);
+}
+
+.projects p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--second-text-color);
 }
